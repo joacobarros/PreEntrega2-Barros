@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(255, 187, 0);
+}
+h1{
+    color: rgb(3, 0, 0);
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+h3{
+    text-align: center;
+    margin: auto;
+}
+@media screen and (min-width: 600px) {
+    .container {  display: grid;
+     grid-template-columns: 1fr 3fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+         "encabezado encabezado encabezado"
+         ". fotos ."
+         ". fotos ."
+         ". fotos ."
+         "abajo abajo abajo";
+     }
+}
+  
+  .encabezado { grid-area: encabezado; }
+  
+  .fotos { grid-area: fotos; }
+  
+  .abajo { grid-area: abajo; }
+  
+nav{
+    width: 90%;
+    background-color: black;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 5px rgb(253, 253, 253);
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.7rem;
+}
+nav ul a:hover{
+    background-color: rgb(255, 187, 0);
+    color: black;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+}
+main{
+    background-color: rgb(0, 0, 0);
+    width: 75%;
+    height: 95%;
+    padding: 0.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.boton:hover{
+    background-color: black; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.caja{
+    width: 540px;
+    height: 100%;
+    margin: 10px 10px;
+    display: flex;
+    border: solid 5px rgb(255, 187, 0);
+    align-content: center; 
+    overflow: hidden;
+}
+.image-button img{
+    width: 540px;
+    height: 540px;
+    margin: auto;
+}
+.icono img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+section{
+    width: 90%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 5px rgb(253, 253, 253);
+}
+section p{
+    margin: auto;
+}
+.image-button:hover {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+@media screen and (max-width: 600px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "encabezado encabezado encabezado"
+          ". caja primera ."
+          ". caja segunda ."
+          ". caja tercera ."
+          "abajo abajo abajo";
+      }
+      
+      .encabezado { grid-area: encabezado; }
+      
+      .abajo { grid-area: abajo; }
+      
+      .caja primera { grid-area: caja primera; }
+      
+      .caja segunda { grid-area: caja segunda; }
+      
+      .caja tercera { grid-area: caja tercera; }
+      
+    
+}
+
+
+
+
+
